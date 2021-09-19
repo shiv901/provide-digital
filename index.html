@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CDNs -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Font Awesome CDN -->
@@ -16,19 +17,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <!-- Slick SLider -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-  <!-- Custom CSS -->
-  <link rel='stylesheet' href='./assets/css/style.css'>
+  <!-- Slick SLider -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS Animate CSS -->
+  <link rel='stylesheet' href='./assets/css/style.min.css'>
+
   <title>Provide Digital</title>
 </head>
+
 <body>
 
   <!-- ------------------------------- Navbar -------------------------------- -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="./assets/Images/PD-Logo300.png" alt="Provide Digital">
+        <img src="./assets/images/PD-Logo300.png" alt="Provide Digital">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,12 +60,12 @@
     <div class="banner-wrapper">
       <div class="container">
         <div class="row py-5">
-          <div class="col-6 align-items-center">
+          <div class="col-6 align-items-center" data-aos="fade-right">
             <h1 class="display-6 mb-5">Welcome to <span class="text-white">Provide Digital</span></h1>
             <p class="display-4">Advancing digitalization in order to transform the healthcare industry.</p>
           </div>
-          <div class="col-6">
-            <video src="./assets/Images/hero-video.mp4" class="img-fluid" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+          <div class="col-6" data-aos="fade-left">
+            <video src="./assets/images/hero-video.mp4" class="img-fluid" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
           </div>
         </div> <!-- Row ends -->
       </div> <!-- Container ends -->
@@ -72,7 +78,7 @@
       <h1 class="lead-text">What we <span>Stand for?</span></h1>
       <div class="row">
         <div class="col-lg-4 col-6">
-          <div class="card text-center">
+          <div class="card text-center" data-aos="zoom-in">
             <i class="fas fa-record-vinyl"></i>
             <div class="card-body">
               <h3 class="card-title">Vision</h3>
@@ -84,7 +90,7 @@
         </div>
 
         <div class="col-lg-4 col-6">
-          <div class="card text-center">
+          <div class="card text-center" data-aos="zoom-in">
             <i class="fas fa-user-tie"></i>
             <div class="card-body">
               <h3 class="card-title">Value</h3>
@@ -96,43 +102,7 @@
         </div>
 
         <div class="col-lg-4 col-6">
-          <div class="card text-center">
-            <i class="far fa-compass"></i>
-            <div class="card-body">
-              <h3 class="card-title">Mission</h3>
-              <p class="card-text">
-                Design and create innovative digital solutions for better health experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-6">
-          <div class="card text-center">
-            <i class="far fa-compass"></i>
-            <div class="card-body">
-              <h3 class="card-title">Mission</h3>
-              <p class="card-text">
-                Design and create innovative digital solutions for better health experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-6">
-          <div class="card text-center">
-            <i class="far fa-compass"></i>
-            <div class="card-body">
-              <h3 class="card-title">Mission</h3>
-              <p class="card-text">
-                Design and create innovative digital solutions for better health experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-6">
-          <div class="card text-center">
+          <div class="card text-center" data-aos="zoom-in">
             <i class="far fa-compass"></i>
             <div class="card-body">
               <h3 class="card-title">Mission</h3>
@@ -154,14 +124,14 @@
       <div class="container">
         <h1 class="lead-text">Our innovative <span>Product</span></h1>
         <div class="row">
-          <div class="col-5 text-center">
+          <div class="col-5 text-center" data-aos="fade-right">
             <div class="sticky">
               <i class="fas fa-hotel fa-4x mb-5"></i>
               <p class="lead display-6">Providing <span class="text-green">MyBooking</span></p>
             </div>
           </div>
-          <div class="col-7">
-            <img src="./assets/Images/PMB.png" alt="Booking Hotel" class="img-fluid">
+          <div class="col-7" data-aos="fade-left">
+            <img src="./assets/images/PMB.png" alt="Booking Hotel" class="img-fluid">
             <ul>
               <li class="lead my-5"> <i class="far fa-hand-point-right"></i> Easy to use Covid-19 Response to desk booking platform to maintain social distancing at work.</li>
               <li class="lead my-5"> <i class="far fa-hand-point-right"></i> Fully Customisable and Controllable to meet operational needs and organise the flow of staff across the network.</li>
@@ -174,18 +144,14 @@
         </div>
       </div>
     </div>
+
+
     <div class="curves yellow"></div>
     <div class="yellow-wrapper">
       <div class="container">
-        <div class="row flex-row-reverse mt-4">
-          <div class="col-5 text-center">
-            <div class="sticky">
-              <i class="fas fa-bed fa-4x mb-5"></i>
-              <p class="lead display-6">Beds <span class="text-green">Bereau</span></p>
-            </div>
-          </div>
-          <div class="col-7">
-            <img src="./assets/Images/BB-2048x1045.png" alt="Booking Hotel" class="img-fluid">
+        <div class="row mt-4">
+          <div class="col-7" data-aos="fade-right">
+            <img src="./assets/images/BB-2048x1045.png" alt="Booking Hotel" class="img-fluid">
             <ul>
               <li class="lead my-5"> <i class="far fa-hand-point-right"></i> Live View Dashboard to allow staff to make admission decision in Real Time based on current bed availability across the entire network.</li>
               <li class="lead my-5"> <i class="far fa-hand-point-right"></i> Fully Customisable Administration portal to control however many wards/rooms required.</li>
@@ -194,6 +160,12 @@
               <li class="lead my-5"> <i class="far fa-hand-point-right"></i> Administrators can view patient Estimated Discharge Dates and produce reports showing these trends at any locations.</li>
             </ul>
             <a href="" class="btn btn-light btn-lg rounded-3 ms-5">Know More</a>
+          </div>
+          <div class="col-5 text-center" data-aos="fade-left">
+            <div class="sticky">
+              <i class="fas fa-bed fa-4x mb-5"></i>
+              <p class="lead display-6">Beds <span class="text-green">Bereau</span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -204,16 +176,18 @@
 
 
   <!-- ------------------------------ Partners ------------------------------- -->
-  <section id="partners" class="section text-center" >
-    <div class="container">
+  <section id="partners" class="section text-center parallax">
+    <div class="container py-md-5">
       <div class="lead-text text-white">Our Amazing <span>Partners</span></div>
-      <p class="lead text-white fs-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
-      <div class="partner-slider d-flex flex-wrap">
-        <img src="./assets/Images/slider/Alpha-MD-logo.png" alt="Alpha-MD" class="img-fluid">
-        <img src="./assets/Images/slider/BTUH_NHS_Foundation_Trust_80h_DIGITAL_white-Logo.png" alt="BTUH-NHS" class="img-fluid">
-        <img src="./assets/Images/slider/eahsn_white-logo.png" alt="BTUH-NHS" class="img-fluid">
-        <img src="./assets/Images/slider/M-SEH-CP-white-Logo.png" alt="M-SEH-CP" class="img-fluid">
-        <img src="./assets/Images/slider/provide-logo.png" alt="Provide" class="img-fluid">
+      <p class="lead text-white fs-5 pb-md-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
+
+
+      <div class="partner-slider focus-on-slide mt-5">
+        <div class="px-5 text-center"><img src="./assets/images/slider/Alpha-MD-logo.png" alt="Alpha-MD" class="img-fluid mx-auto"></div>
+        <div class="px-5 text-center"><img src="./assets/images/slider/BTUH_NHS_Foundation_Trust_80h_DIGITAL_white-Logo.png" alt="BTUH-NHS" class="img-fluid mx-auto"></div>
+        <div class="px-5 text-center"><img src="./assets/images/slider/eahsn_white-logo.png" alt="BTUH-NHS" class="img-fluid mx-auto"></div>
+        <div class="px-5 text-center"><img src="./assets/images/slider/M-SEH-CP-white-Logo.png" alt="M-SEH-CP" class="img-fluid mx-auto"></div>
+        <div class="px-5 text-center"><img src="./assets/images/slider/provide-logo.png" alt="Provide" class="img-fluid mx-auto"></div>
       </div>
     </div>
   </section>
@@ -221,56 +195,59 @@
 
 
   <!-- -------------------------------- faces -------------------------------- -->
-  <section id="faces" class="section">
-    <div class="wrapper">
+  <section id="faces" class="section pb-5">
+      <div class="container">
       <h1 class="lead-text">Faces behind <span>our success</span></h1>
-      <div class="container d-md-flex justify-content-around slick-item">
-        <div class="card">
-          <img src="./assets/Images/paul.png" alt="Paul Twyman" class="img-fluid">
-          <div class="card-body text-center">
-            <h3 class="card-title">Paul Twyman</h3>
-            <p class="text-primary mb-0">Managing Director</p>
-            <a href="mailto:xyz@gmailcom" class="mb-3 d-inline-block">xyz@gmail.com</a>
-            <div class="social text-center d-flex justify-content-around mx-5">
-              <i class="fab fa-twitter-square fa-2x"></i>
-              <i class="fab fa-linkedin fa-2x"></i>
+        <div class="face-slider">
+          <div>
+            <div class="card">
+              <img src="./assets/images/paul.png" alt="Paul Twyman" class="img-fluid w-100">
+              <div class="card-body text-center">
+                <h3 class="card-title">Paul Twyman</h3>
+                <p class="text-primary mb-0">Managing Director</p>
+                <a href="mailto:xyz@gmailcom" class="mb-3 d-inline-block">xyz@gmail.com</a>
+                <div class="social text-center d-flex justify-content-around mx-5">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img src="./assets/images/Philip_Richards.png" alt="Philip_Richards" class="img-fluid w-100">
+              <div class="card-body text-center">
+                <h3 class="card-title">Philip Richards</h3>
+                <p class="text-primary mb-0">Director/Company Secretary</p>
+                <a href="mailto:xyz@gmailcom" class="mb-3 d-inline-block">xyz@gmail.com</a>
+                <div class="social text-center d-flex justify-content-around mx-5">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img src="./assets/images/John_Niland.png" alt="John Niland" class="img-fluid w-100">
+              <div class="card-body text-center">
+                <h3 class="card-title">John Niland</h3>
+                <p class="text-primary mb-0">Director</p>
+                <a href="mailto:xyz@gmailcom" class="mb-3 d-inline-block">xyz@gmail.com</a>
+                <div class="social text-center d-flex justify-content-around mx-5">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card">
-          <img src="./assets/Images/Philip_Richards.png" alt="Philip_Richards" class="img-fluid">
-          <div class="card-body text-center">
-            <h3 class="card-title">Philip Richards</h3>
-            <p class="text-primary mb-0">Director/Company Secretary</p>
-            <a href="mailto:xyz@gmailcom" class="mb-3 d-inline-block">xyz@gmail.com</a>
-            <div class="social text-center d-flex justify-content-around mx-5">
-              <i class="fab fa-twitter-square fa-2x"></i>
-              <i class="fab fa-linkedin fa-2x"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./assets/Images/John_Niland.png" alt="John Niland" class="img-fluid">
-          <div class="card-body text-center">
-            <h3 class="card-title">John Niland</h3>
-            <p class="text-primary mb-0">Director</p>
-            <a href="mailto:xyz@gmailcom" class="mb-3 d-inline-block">xyz@gmail.com</a>
-            <div class="social text-center d-flex justify-content-around mx-5">
-              <i class="fab fa-twitter-square fa-2x"></i>
-              <i class="fab fa-linkedin fa-2x"></i>
-            </div>
-          </div>
-        </div>
-        
-        
       </div>
-    </div>
   </section>
 
   <!-- ---------------------------- Get in TOuch ----------------------------- -->
-  <div id="get-in-touch" class="section">
+  <!-- <div id="get-in-touch" class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col">
@@ -297,26 +274,81 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
+  <!-- --------------------- Footer ---------------------- -->
+
+  <footer class="main-footer py-5 text-white">
+    <img src="./assets/images/footer_dark-blue-squiggle.svg" alt="curved-image" class="img-fluid footer-curved">
+    <div class="container pb-md-3">
+      <div class="row justify-content-between">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+          <img src="./assets/images/PD-Logo300.png" alt="Provide Digital" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+          list
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+          list
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+          list
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+          list
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- ----------------------------------------------------------------------- -->
   <!--                                   JS                                    -->
   <!-- ----------------------------------------------------------------------- -->
+  <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animate JS -->
+  <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Background Parallax Effect -->
+  <script src="./assets/Background-Parallax-Effect/laxicon.js"></script>
 
   <!-- Slick Slider -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.slick-items').slick({
+      AOS.init();
+      $('.parallax').laxicon({
+        bgImgPath: "./assets/images/hand-shake.jpg"
+      });
+
+      $('.partner-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        cssEase: 'ease',
+        autoplay: true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+
+      $('.face-slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3
       });
-      
     });
   </script>
 
 </body>
+
 </html>

@@ -23,7 +23,12 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
@@ -59,6 +64,19 @@ body {
 
 .section {
   margin-block: 5rem;
+}
+
+.focus-on-slide .slick-slide {
+  opacity: 0.5;
+  transform: scale(0.7);
+  transition: all 400ms ease 100ms;
+  animation-duration: 400ms;
+}
+
+.focus-on-slide .slick-slide.slick-current.slick-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 400ms ease 200ms;
 }
 
 .nav-item {
@@ -176,12 +194,13 @@ body {
 }
 
 #partners {
-  background: url("../Images/hand-shake.jpg") no-repeat;
+  background: url("../images/hand-shake.jpg") no-repeat;
   background-position: center;
-  background-attachment: local;
+  background-size: cover;
   object-fit: cover;
   position: relative;
   z-index: 0;
+  padding: 200px 0;
 }
 
 #partners::before {
@@ -194,8 +213,6 @@ body {
 }
 
 #partners .container {
-  display: grid;
-  height: 100vh;
   place-content: center;
   position: relative;
   z-index: 2;
@@ -205,8 +222,14 @@ body {
   margin-bottom: 1rem;
 }
 
-#faces .card img {
+#partners .partner-slider img {
+  height: 65px;
+  object-fit: contain;
+}
+
+#faces .card {
   max-width: 250px;
+  margin: auto;
 }
 
 #get-in-touch {
@@ -235,4 +258,20 @@ body {
   transform: translateX(-50%);
   width: 3rem;
   height: 2px;
+}
+
+.main-footer {
+  background-color: #00254D;
+  margin-top: 7rem;
+  position: relative;
+}
+
+.main-footer .footer-curved {
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
 }
