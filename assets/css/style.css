@@ -35,11 +35,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-::-moz-selection {
-  background-color: #333;
-  color: #fff;
-}
-
 ::selection {
   background-color: #333;
   color: #fff;
@@ -106,7 +101,6 @@ body {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 3rem;
 }
@@ -121,14 +115,12 @@ body {
 
 #vision .card {
   border: none !important;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-block: 1.5rem;
 }
 
 #vision .card:hover {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  transform: translateY(-5%);
 }
 
 #vision .card:hover .card-title {
@@ -187,8 +179,7 @@ body {
   background: url("../Images/hand-shake.jpg") no-repeat;
   background-position: center;
   background-attachment: local;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   z-index: 0;
 }
@@ -203,7 +194,6 @@ body {
 }
 
 #partners .container {
-  display: -ms-grid;
   display: grid;
   height: 100vh;
   place-content: center;
@@ -242,8 +232,7 @@ body {
   background: #fff;
   bottom: -1rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 3rem;
   height: 2px;
 }
