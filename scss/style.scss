@@ -267,6 +267,18 @@ body {
   .card {
       max-width: 250px;
       margin: auto;
+    .img-wrapper{
+      overflow: hidden;
+      img{
+        filter: grayscale(100%);
+        transition: all 0.3s;
+        transform: scale(1);
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+
   }
 }
 

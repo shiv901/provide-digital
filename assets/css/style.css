@@ -232,6 +232,20 @@ body {
   margin: auto;
 }
 
+#faces .card .img-wrapper {
+  overflow: hidden;
+}
+
+#faces .card .img-wrapper img {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#faces .card .img-wrapper img:hover {
+  transform: scale(1.2);
+}
+
 #get-in-touch {
   padding: 5rem;
   margin-bottom: 0;
