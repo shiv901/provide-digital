@@ -289,3 +289,23 @@ body {
   left: 0;
   bottom: 100%;
 }
+
+.main-footer .footer-column:not(:last-child) {
+  width: 100%;
+  max-width: 180px;
+}
+
+.main-footer .footer-column h6 {
+  color: #108984;
+}
+
+.main-footer .footer-column .footer-link {
+  color: #d7eff5;
+  padding-top: .5rem;
+  padding-bottom: .25rem;
+  display: inline-block;
+}
+
+.main-footer .footer-column .footer-link:hover {
+  color: #d7eff5;
+}

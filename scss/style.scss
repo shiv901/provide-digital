@@ -265,15 +265,18 @@ body {
 
 #faces {
   .card {
-      max-width: 250px;
-      margin: auto;
-    .img-wrapper{
+    max-width: 250px;
+    margin: auto;
+
+    .img-wrapper {
       overflow: hidden;
-      img{
+
+      img {
         filter: grayscale(100%);
         transition: all 0.3s;
         transform: scale(1);
-        &:hover{
+
+        &:hover {
           transform: scale(1.2);
         }
       }
@@ -326,4 +329,28 @@ body {
     left: 0;
     bottom: 100%;
   }
+
+  .footer-column {
+
+    &:not(:last-child){
+      width: 100%;
+      max-width: 180px;
+    }
+
+    h6 {
+      color: $seagreen;
+    }
+
+    .footer-link {
+      color: $light;
+      padding-top: .5rem;
+      padding-bottom: .25rem;
+      display: inline-block;
+
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+
 }
