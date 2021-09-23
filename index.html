@@ -42,7 +42,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -54,7 +54,7 @@
             </li>
           </ul>
 
-          <a href="/" class="btn-dark-rounded">Request a demo</a>
+          <!-- <a href="/" class="btn-dark-rounded">Request a demo</a> -->
         </div>
       </div> <!-- Container ends -->
     </nav> <!-- Navbar ends-->
@@ -165,7 +165,7 @@
             </ul>
             <a href="" class="btn btn-light btn-lg rounded-3 ms-5">Know More</a>
           </div>
-          <div class="col-5 text-center" data-aos="fade-left">
+          <div class="col-4 text-center" data-aos="fade-left">
             <div class="sticky">
               <i class="fas fa-bed fa-4x mb-5"></i>
               <p class="lead display-6">Beds <span class="text-green">Bereau</span></p>
@@ -180,18 +180,18 @@
 
 
   <!-- ------------------------------ Partners ------------------------------- -->
-  <section id="partners" class="section text-center parallax">
-    <div class="container py-md-5">
-      <div class="lead-text text-white">Our Amazing <span>Partners</span></div>
-      <p class="lead text-white fs-5 pb-md-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
-
-
-      <div class="partner-slider focus-on-slide mt-5">
-        <div class="px-5 text-center"><img src="./assets/images/slider/Alpha-MD-logo.png" alt="Alpha-MD" class="img-fluid mx-auto"></div>
-        <div class="px-5 text-center"><img src="./assets/images/slider/BTUH_NHS_Foundation_Trust_80h_DIGITAL_white-Logo.png" alt="BTUH-NHS" class="img-fluid mx-auto"></div>
-        <div class="px-5 text-center"><img src="./assets/images/slider/eahsn_white-logo.png" alt="BTUH-NHS" class="img-fluid mx-auto"></div>
-        <div class="px-5 text-center"><img src="./assets/images/slider/M-SEH-CP-white-Logo.png" alt="M-SEH-CP" class="img-fluid mx-auto"></div>
-        <div class="px-5 text-center"><img src="./assets/images/slider/provide-logo.png" alt="Provide" class="img-fluid mx-auto"></div>
+  <section id="partners" class="section text-center curves">
+    <div class="wrapper">
+      <div class="container py-md-5">
+        <div class="lead-text text-white">Our Amazing <span>Partners</span></div>
+        <p class="lead text-white fs-5 pb-md-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
+        <div class="partner-slider focus-on-slide mt-5">
+          <div class="px-5 text-center"><img src="./assets/images/slider/Alpha-MD-logo.png" alt="Alpha-MD" class="img-fluid mx-auto"></div>
+          <div class="px-5 text-center"><img src="./assets/images/slider/BTUH_NHS_Foundation_Trust_80h_DIGITAL_white-Logo.png" alt="BTUH-NHS" class="img-fluid mx-auto"></div>
+          <div class="px-5 text-center"><img src="./assets/images/slider/eahsn_white-logo.png" alt="BTUH-NHS" class="img-fluid mx-auto"></div>
+          <div class="px-5 text-center"><img src="./assets/images/slider/M-SEH-CP-white-Logo.png" alt="M-SEH-CP" class="img-fluid mx-auto"></div>
+          <div class="px-5 text-center"><img src="./assets/images/slider/provide-logo.png" alt="Provide" class="img-fluid mx-auto"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -346,36 +346,35 @@
   <!-- AOS Animate JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Background Parallax Effect -->
-  <script src="./assets/Background-Parallax-Effect/laxicon.js"></script>
-
   <!-- Slick Slider -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-    const navbarClassUpdate = (className = "") => {
-      document.querySelector('.navbar-wrapper').className = `navbar-wrapper ${className}`
-    }
+    // Auto hide Navbar
+    // const navbarClassUpdate = (className = "") => {
+    //   document.querySelector('.navbar-wrapper').className = `navbar-wrapper ${className}`
+    // }
 
-    window.onscroll = function (e) {
-      if (this.oldScroll > this.scrollY) {
-        // scroll up
-        this.scrollY > 100 && navbarClassUpdate("fixed");
-      } else {
-        // scroll down
-        this.scrollY > 100 && navbarClassUpdate();
-      }
+    // window.onscroll = function (e) {
+    //   if (this.oldScroll > this.scrollY) {
+    //     // scroll up
+    //     this.scrollY > 100 && navbarClassUpdate("sticky");
+    //   } else {
+    //     // scroll down
+    //     this.scrollY > 100 && navbarClassUpdate();
+    //   }
 
-      this.scrollY < 100 && navbarClassUpdate("static");
-      this.oldScroll = this.scrollY;
-      delete window.onscroll;
-    };
+    //   this.scrollY < 100 && navbarClassUpdate("static");
+    //   this.oldScroll = this.scrollY;
+    //   delete window.onscroll;
+    // }; 
+    // Auto Hide Fn ends
+
+    // ********* Navbar Minimize and Fixed ******//
+
 
     $(document).ready(function () {
 
       AOS.init();
-      $('.parallax').laxicon({
-        bgImgPath: "./assets/images/hand-shake.jpg"
-      });
 
       $('.partner-slider').slick({
         infinite: true,
