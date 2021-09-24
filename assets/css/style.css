@@ -66,6 +66,14 @@ body {
   margin-block: 5rem;
 }
 
+.btn-dark-rounded {
+  font-size: 0.9rem;
+  background: #304577;
+  color: #fff;
+  padding: 0.75em 2em;
+  border-radius: 2rem;
+}
+
 .focus-on-slide .slick-slide {
   opacity: 0.5;
   transform: scale(0.7);
@@ -98,12 +106,18 @@ body {
   transform: translate3d(0px, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
-.navbar-wrapper ~ * {
+.navbar-wrapper + * {
   margin-top: 95px;
+}
+
+.navbar-brand {
+  max-width: 10%;
 }
 
 .nav-item {
   margin-right: 1rem;
+  padding: 0 1rem;
+  font-size: 1.1rem;
 }
 
 .nav-item .nav-link {
@@ -143,7 +157,7 @@ body {
 
 .sticky {
   position: sticky;
-  top: 3rem;
+  top: 6rem;
 }
 
 #banner .banner-wrapper {
@@ -217,22 +231,18 @@ body {
 }
 
 #partners {
-  background: url("../images/hand-shake.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-  position: relative;
-  z-index: 0;
-  padding: 200px 0;
+  color: #fff;
+  padding: 100px 0;
+  overflow-x: hidden;
 }
 
-#partners::before {
-  content: '';
-  position: absolute;
-  background: #0009;
-  inset: 0;
-  isolation: isolate;
-  z-index: 1;
+#partners::before, #partners::after {
+  background: #304577;
+}
+
+#partners .wrapper {
+  background: #304577;
+  margin-top: -9rem;
 }
 
 #partners .container {
