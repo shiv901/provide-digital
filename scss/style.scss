@@ -278,10 +278,13 @@ body {
   &::before,&::after {
     background: $darkBlue;
   }
+  &::after{
+    margin-top: -8rem;
+  }
 
   .wrapper{
     background: $darkBlue;
-    margin-top: -9rem;
+    margin-top: -10rem;
   }
 
   .container {
