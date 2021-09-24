@@ -57,7 +57,7 @@ body {
 }
 
 .lead-text {
-  font-size: 4rem;
+  font-size: calc(1.525rem + 3.3vw);
   text-align: center;
   margin-bottom: 5rem;
   font-weight: 300;
@@ -266,11 +266,6 @@ body {
 
 // ********** Partners Section ********** //
 #partners {
-  // background: url('../images/hand-shake.jpg') no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // object-fit: cover;
-  // background: $darkBlue;
   color: #fff;
   padding: 100px 0;
   overflow-x: hidden;
@@ -285,6 +280,7 @@ body {
   .wrapper{
     background: $darkBlue;
     margin-top: -10rem;
+    padding-block: clamp(11rem, calc(10vw + 1rem), 3rem);
   }
 
   .container {
@@ -304,6 +300,12 @@ body {
   }
 
 }
+
+// @media screen and (max-width:567px) {
+//   #partners{
+//     .wrapper{padding-block: 8rem;}
+//   }  
+// }
 
 #faces {
   .card {

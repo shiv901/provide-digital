@@ -18,7 +18,7 @@ body { font-family: 'Montserrat', sans-serif; }
 
 ::selection { background-color: #333; color: #fff; }
 
-.lead-text { font-size: 4rem; text-align: center; margin-bottom: 5rem; font-weight: 300; color: #7a7a7a; }
+.lead-text { font-size: calc(1.525rem + 3.3vw); text-align: center; margin-bottom: 5rem; font-weight: 300; color: #7a7a7a; }
 
 .lead-text span { color: #53ba00; font-weight: bold; }
 
@@ -94,7 +94,7 @@ body { font-family: 'Montserrat', sans-serif; }
 
 #partners::after { margin-top: -8rem; }
 
-#partners .wrapper { background: #304577; margin-top: -10rem; }
+#partners .wrapper { background: #304577; margin-top: -10rem; padding-block: clamp(11rem, calc(10vw + 1rem), 3rem); }
 
 #partners .container { place-content: center; position: relative; z-index: 2; }
 
