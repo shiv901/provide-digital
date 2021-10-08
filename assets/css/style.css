@@ -46,7 +46,7 @@ body {
 }
 
 .lead-text {
-  font-size: 4rem;
+  font-size: calc(1.525rem + 3.3vw);
   text-align: center;
   margin-bottom: 5rem;
   font-weight: 300;
@@ -114,6 +114,12 @@ body {
   max-width: 10%;
 }
 
+@media screen and (max-width: 990px) {
+  .navbar-brand {
+    max-width: 25%;
+  }
+}
+
 .nav-item {
   margin-right: 1rem;
   padding: 0 1rem;
@@ -156,8 +162,14 @@ body {
 }
 
 .sticky {
-  position: sticky;
   top: 6rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .sticky {
+    position: sticky;
+  }
 }
 
 #banner .banner-wrapper {
@@ -240,9 +252,14 @@ body {
   background: #304577;
 }
 
+#partners::after {
+  margin-top: -8rem;
+}
+
 #partners .wrapper {
   background: #304577;
-  margin-top: -9rem;
+  margin-top: -10rem;
+  padding-block: clamp(11rem, calc(10vw + 1rem), 3rem);
 }
 
 #partners .container {

@@ -77,7 +77,7 @@ body {
   margin-block: 5rem;
 }
 
-.btn-dark-rounded{
+.btn-dark-rounded {
   font-size: 0.9rem;
   background: $darkBlue;
   color: #fff;
@@ -122,17 +122,19 @@ body {
     transform: translate3d(0px, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
 
-  & + *{
+  &+* {
     margin-top: 95px;
   }
 }
 
-.navbar-brand{
+.navbar-brand {
   max-width: 10%;
+
   @media screen and (max-width:990px) {
-  max-width: 25%;
+    max-width: 25%;
   }
 }
+
 // @media screen and (max-width:990px) {
 //   .navbar-brand{max-width: 25%;}
 // }
@@ -180,8 +182,11 @@ body {
 }
 
 .sticky {
-  position: sticky;
   top: 6rem;
+  overflow: hidden;
+  @media (min-width: '768px') {
+    position: sticky;
+  }
 }
 
 
@@ -276,14 +281,16 @@ body {
   padding: 100px 0;
   overflow-x: hidden;
 
-  &::before,&::after {
+  &::before,
+  &::after {
     background: $darkBlue;
   }
-  &::after{
+
+  &::after {
     margin-top: -8rem;
   }
 
-  .wrapper{
+  .wrapper {
     background: $darkBlue;
     margin-top: -10rem;
     padding-block: clamp(11rem, calc(10vw + 1rem), 3rem);
