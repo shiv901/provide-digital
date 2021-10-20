@@ -47,8 +47,24 @@ h6 {
   margin-top: 6rem;
 }
 
+.flex-120{flex: 120%;}
+
+.learn-btn{
+  padding: 1em 1.25em;
+  background: #0459b4;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.2s ease;
+  &:hover{
+    background: #004084;
+  }
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 ::selection {
@@ -57,7 +73,7 @@ body {
 }
 
 .lead-text {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.375rem + 1.5vw);
   text-align: center;
   margin-bottom: 5rem;
   font-weight: 300;
@@ -231,6 +247,19 @@ body {
     padding-bottom: 10rem;
   }
 
+  .slide-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .video-div{
+    .text{
+      width: 45%;
+      margin-right: 2rem;
+    }
+  }
+
   .curves {
     &::before {
       background-color: $light;
@@ -278,7 +307,7 @@ body {
 // ********** Partners Section ********** //
 #partners {
   color: #fff;
-  padding: 100px 0;
+  padding: 50px 0;
   overflow-x: hidden;
 
   &::before,
@@ -293,7 +322,7 @@ body {
   .wrapper {
     background: $darkBlue;
     margin-top: -10rem;
-    padding-block: clamp(11rem, calc(10vw + 1rem), 3rem);
+    padding-block: clamp(8rem, calc(8vw + 1rem), 3rem);
   }
 
   .container {
@@ -395,7 +424,7 @@ body {
     }
 
     h6 {
-      color: $seagreen;
+      color: #21eb40;
     }
 
     .footer-link {
