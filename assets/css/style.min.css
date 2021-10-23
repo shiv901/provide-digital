@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 .mt-10 { margin-top: 6rem; }
 
+.h-100vh { height: 100vh; }
+
 .flex-120 { flex: 120%; }
 
 .learn-btn { padding: 1em 1.25em; background: #0459b4; color: white; border-radius: 8px; font-weight: bold; font-size: 15px; transition: background 0.2s ease; }
@@ -40,11 +42,11 @@ body { font-family: 'Comfortaa', sans-serif; }
 
 .navbar-wrapper { position: fixed; width: 100%; top: 0; left: 0; transition: all 0.4s; transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; z-index: 5; }
 
-.navbar-wrapper.static { transform: translate3d(0px, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
+.navbar-wrapper.static { padding-block: 1rem; transform: translate3d(0px, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
 
-.navbar-wrapper.fixed { transform: translate3d(0px, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
+.navbar-wrapper.fixed { padding-block: 0; transform: translate3d(0px, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
 
-.navbar-wrapper + * { margin-top: 95px; }
+.navbar-wrapper.sticky { background: #333; }
 
 .navbar-brand { max-width: 10%; }
 
@@ -52,13 +54,13 @@ body { font-family: 'Comfortaa', sans-serif; }
 
 .nav-item { margin-right: 1rem; padding: 0 1rem; font-size: 1.1rem; }
 
-.nav-item .nav-link { font-weight: bold; }
+.nav-item .nav-link { font-size: 14.4px !important; color: #fff !important; }
 
-.nav-item .nav-link.active { color: #108984 !important; }
+.nav-item .nav-link.active .nav-item .nav-link::after { content: ''; background: #304577; left: 0; bottom: 0; width: 100%; height: 2px; }
 
 .curves { overflow-x: hidden; }
 
-.curves::before { content: ""; display: block; width: 120%; height: 240px; background-color: #108984; border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%; margin-left: -10%; }
+.curves::before { content: ""; display: block; width: 140%; height: 240px; background-color: #108984; border-radius: 50% 50% 49% 51% / 100% 100% 0% 0%; margin-left: -20%; }
 
 .curves::after { content: ""; display: block; width: 120%; height: 240px; margin-top: -180px; background-color: #108984; border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%; margin-left: -10%; z-index: -1; position: relative; }
 
@@ -66,9 +68,25 @@ body { font-family: 'Comfortaa', sans-serif; }
 
 @media (min-width: 768px) { .sticky { position: sticky; } }
 
+.flex-center-all { display: flex; align-items: center; justify-content: center; }
+
+.input-required { color: red; }
+
+#banner { overflow-x: hidden; }
+
 #banner .banner-wrapper { background: #108984; }
 
-#banner .banner-wrapper .container { margin-top: -170px; }
+#banner .banner-wrapper::after { content: ""; display: block; width: 120%; height: 10rem; margin-top: -6rem; background-color: white; border-radius: 50% 50% 49% 51% / 100% 100% 0% 0%; margin-left: -10%; }
+
+.scroll-down-btn { position: absolute; bottom: 5rem; left: 50%; transform: translateX(-50%); }
+
+.contact-navbar.navbar-wrapper { position: relative; top: 6rem; }
+
+.contact-navbar .nav-link { color: #000 !important; font-size: 14.4rem; }
+
+#contact { margin-top: -5rem; padding-top: 10rem; background: #d0f3f2; padding-bottom: 5rem; margin-bottom: -4rem; }
+
+#vision { margin-top: -4rem; }
 
 #vision .card { border: none !important; transition: all 0.3s ease-in-out; margin-block: 1.5rem; }
 
@@ -94,15 +112,15 @@ body { font-family: 'Comfortaa', sans-serif; }
 
 #innovative .wrapper + div::after { background: none; }
 
-#innovative .yellow-wrapper { background-color: #FFF8D6; margin-top: -14rem; padding-bottom: 3rem; }
+#innovative .yellow-wrapper { background-color: #FFF8D6; margin-top: -14rem; padding-bottom: 10rem; }
 
 #innovative .yellow-wrapper + div { margin-top: -15rem; }
 
 #innovative .yellow-wrapper + div::before { background-color: #FFF8D6; }
 
-#innovative .yellow-wrapper + div::after { background-color: #FFF8D6; }
+#innovative .yellow-wrapper + div::after { background: none; }
 
-#partners { color: #fff; padding: 50px 0; overflow-x: hidden; }
+#partners { color: #fff; padding: 50px 0; overflow-x: hidden; margin-top: -17rem; }
 
 #partners::before, #partners::after { background: #304577; }
 

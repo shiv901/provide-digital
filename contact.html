@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CDNs -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome CDN -->
+  <script src='https://kit.fontawesome.com/e15856ec42.js' crossorigin='anonymous'></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+  <!-- Slick SLider -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- Slick SLider -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS Animate CSS -->
+  <link rel='stylesheet' href='./assets/css/style.min.css'>
+
+  <title>Provide Digital</title>
+</head>
+
+<body>
+
+  <!-- ------------------------------- Navbar -------------------------------- -->
+  <div class="navbar-wrapper contact-navbar">
+    <nav class="navbar navbar-expand-lg py-2 navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <!-- <img src="./assets/img/pd-logo.png" class="img-fluid" alt="Provide Digital"> -->
+          <img src="./assets/img/pd-logo.svg" class="img-fluid w-100 nav-logo" alt="Provide Digital">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link  ms-5" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <a href="/" class="btn-dark-rounded ms-auto text-white">Request a demo</a>
+        </div>
+      </div> <!-- Container ends -->
+    </nav> <!-- Navbar ends-->
+  </div>
+  <!-- --------------------------- Banner Section ---------------------------- -->
+  <section id="contact" class="">
+    <div class="contact-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <h1 class="display-5 fw-bold">Get In touch</h1>
+            <p>We are here for you! How can we help?</p>
+            <form action="" class="form my-5">
+              <div class="form-group my-3">
+                <label class="form-label" for="#name">Name<span class="input-required">*</span></label>
+                <input class="form-control" type="text" id="name">
+              </div>
+              <div class="form-group my-4">
+                <label class="form-label" for="#email">Email Address<span class="input-required">*</span></label>
+                <input class="form-control" type="email" id="email">
+              </div>
+              <div class="form-group my-4">
+                <label class="form-label" for="#phone">Phone<span class="input-required">*</span></label>
+                <input class="form-control" type="tel" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required="" id="phone">
+              </div>
+              
+              <div class="form-group my-4">
+                <label for="selectHear" class="form-label">How did you first hear about ReceiptsMinder?<span class="input-required">*</span></label>
+                <select class="form-select" id="selectHear" name="firstHear" required="">
+                    <option value="" selected="">Please Select</option>
+                    <!-- <option value="Search Engine (Google, Bing, Yahoo, etc.)">Search Engine
+                    (Google, Bing, Yahoo, etc.)</option> -->
+                    <option value="Social Media (Facebook, Linkedin, etc.)">Social Media (Facebook, linkedin, etc.)</option>
+                    <option value="Recommended by friend or colleague">Recommended by friend or colleague</option>
+                    <option value="News publications">News publications</option>
+                    <option value="Events">Events</option>
+                    <option value="A ReceiptsMinder employee got in touch">A ReceiptsMinder employee got in touch</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select an option from the dropdown menu.
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn-dark-rounded text-white w-100 mt-5">Submit</button>
+            </form>
+
+          </div>
+          <div class="col-7 flex-center-all">
+            <img src="./assets/img/Arrange-a-Demo-Phone.svg" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+      </div> <!-- Container ends -->
+    </div><!-- Banner Wrapper ends -->
+  </section>
+
+  <!-- --------------------- Footer ---------------------- -->
+
+  <footer class="main-footer py-5 text-white">
+    <img src="./assets/img/footer_dark-blue-squiggle.svg" alt="curved-image" class="img-fluid footer-curved">
+    <div class="container pb-md-3">
+      <div class="row justify-content-between">
+        <div class="col-auto footer-column">
+          <img src="./assets/img/pd-white-logo.svg" alt="Provide Digital" class="img-fluid">
+        </div>
+        <div class="col-auto footer-column">
+          <h6>Product</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Assessment</a></li>
+            <li><a href="#" class="footer-link">Planning</a></li>
+            <li><a href="#" class="footer-link">Delivery</a></li>
+            <li><a href="#" class="footer-link">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-auto footer-column">
+          <h6>Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">eBook</a></li>
+            <li><a href="#" class="footer-link">On-demand webinars</a></li>
+            <li><a href="#" class="footer-link">Care Planning Hub</a></li>
+            <li><a href="#" class="footer-link">Security and Data Protection</a></li>
+          </ul>
+        </div>
+        <div class="col-auto footer-column">
+          <h6>Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Join us</a></li>
+            <li><a href="#" class="footer-link">Refer us</a></li>
+            <li><a href="#" class="footer-link">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-auto footer-column">
+          <h6>Follow us</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Facebook</a></li>
+            <li><a href="#" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-auto footer-column">
+          <h6>Get the app</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Terms & conditions</a></li>
+            <li><a href="#" class="footer-link">Privacy policy</a></li>
+            <li><a href="#" class="footer-link">Certified BCorp</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                                   JS                                    -->
+  <!-- ----------------------------------------------------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animate JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    // Auto hide Navbar
+
+    // const navbarClassUpdate = (className = "") => {
+    //   document.querySelector('.navbar-wrapper').className = `navbar-wrapper ${className}`
+    // }
+
+    // window.onscroll = function (e) {
+    //   if (this.oldScroll > this.scrollY) {
+    //     // scroll up
+    //     this.scrollY > 100 && navbarClassUpdate("sticky");
+    //   } else {
+    //     // scroll down
+    //     this.scrollY > 100 && navbarClassUpdate();
+    //   }
+
+    //   this.scrollY < 100 && navbarClassUpdate("static");
+    //   this.oldScroll = this.scrollY;
+    //   delete window.onscroll;
+    // }; 
+
+    // Auto Hide Fn ends
+
+    // ********* Navbar Minimize and Fixed ******//
+
+
+    $(document).ready(function () {
+
+      AOS.init();
+
+      $('.partner-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        cssEase: 'ease',
+        autoplay: true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+
+      $('.face-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    });
+  </script>
+
+</body>
+
+</html>
