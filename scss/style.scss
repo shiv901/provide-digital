@@ -233,7 +233,20 @@ body {
 #banner {
   overflow-x: hidden;
   .banner-wrapper {
-    background: $seagreen;
+    background: url('../img/Banner-slider-bg1.jpg');
+    position: relative;
+    isolation: isolate;
+
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 0, 39, 0.80);
+      z-index: -1;
+    }
 
     &::after{
       content: "";
@@ -250,7 +263,7 @@ body {
 
 .scroll-down-btn{
   position: absolute;
-  bottom: 5rem;
+  bottom: 9rem;
   left: 50%;
   transform: translateX(-50%);
 }
