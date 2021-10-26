@@ -143,8 +143,9 @@ body {
   }
 
   &.sticky{
-    background: #333;
-    // .nav-link{color: $darkBlue !important;}
+    background: #3c4444;
+    top: 4.8rem;
+    overflow: visible;
   }
 
 }
@@ -170,12 +171,14 @@ body {
     // font-weight: bold;
     font-size: 14.4px !important;
     color: #fff !important;
+    position: relative;
 
-    &.active &::after {
+    &.active::before {
       content: '';
-      background: $darkBlue;
-      left: 0;
+      position: absolute;
+      background: $seagreen;
       bottom: 0;
+      left: 0;
       width: 100%;
       height: 2px;
     }
@@ -278,7 +281,7 @@ body {
     color: #000 !important;
     font-size: 14.4rem;
   }
-
+  
 }
 
 #contact{
@@ -289,6 +292,9 @@ body {
   margin-bottom: -4rem;
 
   .contact-wrapper{
+    textarea{
+      min-height: 6rem;
+    }
   }
 }
 
@@ -379,6 +385,12 @@ body {
   }
 }
 
+.section-ec{
+  margin-top: -10rem;
+  position: relative;
+  z-index: 1;
+}
+
 // ********** Partners Section ********** //
 #partners {
   color: #fff;
@@ -386,23 +398,24 @@ body {
   overflow-x: hidden;
   margin-top: -17rem;
 
-  &::before,
-  &::after {
+  &::before{
     background: $darkBlue;
+    margin-bottom: -6rem;
+    z-index: 2;
+    position: relative;
   }
 
   &::after {
-    margin-top: -8rem;
+    display: none;
   }
 
   .wrapper {
     background: $darkBlue;
-    margin-top: -10rem;
-    padding-block: clamp(8rem, calc(8vw + 1rem), 3rem);
+    padding-block: clamp(11rem, calc(10vw + 1rem), 3rem);
   }
 
   .container {
-    // background: $darkBlue;
+    margin-top: -11rem;
     place-content: center;
     position: relative;
     z-index: 2;
@@ -426,6 +439,14 @@ body {
 // }
 
 #faces {
+  margin-top: -13rem;
+  &::before{
+    background: #fff;
+    margin-bottom: -6rem;
+  }
+  &::after{
+    display: none;
+  }
   .card {
     max-width: 250px;
     margin: auto;
@@ -476,20 +497,18 @@ body {
 }
 
 .main-footer {
-  $curvedSizeFooter: 7rem;
-  background-color: #00254D;
-  // background-color: #004D;
-  margin-top: $curvedSizeFooter;
-  position: relative;
 
-  .footer-curved {
-    width: 100%;
-    height: $curvedSizeFooter;
-    object-fit: cover;
-    object-position: top;
-    position: absolute;
-    left: 0;
-    bottom: 100%;
+  &.curves::before{
+    background-color :#00254D; 
+    margin-bottom: -6rem;
+  }
+
+  &.curves::after{
+    display: none;
+  }
+
+  .wrapper{
+    background-color: #00254D;
   }
 
   .footer-column {

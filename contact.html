@@ -52,8 +52,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Product
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="ECCard.html">EC Card Platform</a></li>
+                <li><a class="dropdown-item" href="experience.html">Provide My Experience</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
 
@@ -85,27 +94,14 @@
               </div>
               
               <div class="form-group my-4">
-                <label for="selectHear" class="form-label">How did you first hear about ReceiptsMinder?<span class="input-required">*</span></label>
-                <select class="form-select" id="selectHear" name="firstHear" required="">
-                    <option value="" selected="">Please Select</option>
-                    <!-- <option value="Search Engine (Google, Bing, Yahoo, etc.)">Search Engine
-                    (Google, Bing, Yahoo, etc.)</option> -->
-                    <option value="Social Media (Facebook, Linkedin, etc.)">Social Media (Facebook, linkedin, etc.)</option>
-                    <option value="Recommended by friend or colleague">Recommended by friend or colleague</option>
-                    <option value="News publications">News publications</option>
-                    <option value="Events">Events</option>
-                    <option value="A ReceiptsMinder employee got in touch">A ReceiptsMinder employee got in touch</option>
-                    <option value="Other">Other</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select an option from the dropdown menu.
-                </div>
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" class="form-control"></textarea>
-            </div>
-            <button type="submit" class="btn-dark-rounded text-white w-100 mt-5">Submit</button>
+                <label for="company" class="form-label">Company<span class="input-required">*</span></label>
+                <input type="text" id="company" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn-dark-rounded text-white w-100 mt-5">Submit</button>
             </form>
 
           </div>
@@ -120,56 +116,56 @@
 
   <!-- --------------------- Footer ---------------------- -->
 
-  <footer class="main-footer py-5 text-white">
-    <img src="./assets/img/footer_dark-blue-squiggle.svg" alt="curved-image" class="img-fluid footer-curved">
-    <div class="container pb-md-3">
-      <div class="row justify-content-between">
-        <div class="col-auto footer-column">
-          <img src="./assets/img/pd-white-logo.svg" alt="Provide Digital" class="img-fluid">
-        </div>
-        <div class="col-auto footer-column">
-          <h6>Product</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">Assessment</a></li>
-            <li><a href="#" class="footer-link">Planning</a></li>
-            <li><a href="#" class="footer-link">Delivery</a></li>
-            <li><a href="#" class="footer-link">Pricing</a></li>
-          </ul>
-        </div>
-        <div class="col-auto footer-column">
-          <h6>Resources</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">Blog</a></li>
-            <li><a href="#" class="footer-link">eBook</a></li>
-            <li><a href="#" class="footer-link">On-demand webinars</a></li>
-            <li><a href="#" class="footer-link">Care Planning Hub</a></li>
-            <li><a href="#" class="footer-link">Security and Data Protection</a></li>
-          </ul>
-        </div>
-        <div class="col-auto footer-column">
-          <h6>Company</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">Join us</a></li>
-            <li><a href="#" class="footer-link">Refer us</a></li>
-            <li><a href="#" class="footer-link">Support</a></li>
-          </ul>
-        </div>
-        <div class="col-auto footer-column">
-          <h6>Follow us</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">Facebook</a></li>
-            <li><a href="#" class="footer-link">Twitter</a></li>
-            <li><a href="#" class="footer-link">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div class="col-auto footer-column">
-          <h6>Get the app</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">Terms & conditions</a></li>
-            <li><a href="#" class="footer-link">Privacy policy</a></li>
-            <li><a href="#" class="footer-link">Certified BCorp</a></li>
-          </ul>
-
+  <footer class="main-footer text-white curves">
+    <!-- <img src="./assets/img/footer_dark-blue-squiggle.svg" alt="curved-image" class="img-fluid footer-curved"> -->
+    <div class="wrapper">
+      <div class="container pb-md-3">
+        <div class="row justify-content-between">
+          <div class="col-auto footer-column">
+            <img src="./assets/img/pd-white-logo.svg" alt="Provide Digital" class="img-fluid">
+          </div>
+          <div class="col-auto footer-column">
+            <h6>Product</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Assessment</a></li>
+              <li><a href="#" class="footer-link">Planning</a></li>
+              <li><a href="#" class="footer-link">Delivery</a></li>
+              <li><a href="#" class="footer-link">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="col-auto footer-column">
+            <h6>Resources</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">eBook</a></li>
+              <li><a href="#" class="footer-link">On-demand webinars</a></li>
+              <li><a href="#" class="footer-link">Care Planning Hub</a></li>
+              <li><a href="#" class="footer-link">Security and Data Protection</a></li>
+            </ul>
+          </div>
+          <div class="col-auto footer-column">
+            <h6>Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Join us</a></li>
+              <li><a href="#" class="footer-link">Refer us</a></li>
+              <li><a href="#" class="footer-link">Support</a></li>
+            </ul>
+          </div>
+          <div class="col-auto footer-column">
+            <h6>Follow us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Facebook</a></li>
+              <li><a href="#" class="footer-link">Twitter</a></li>
+              <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="col-auto footer-column">
+            <h6>Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Terms & conditions</a></li>
+              <li><a href="#" class="footer-link">Privacy policy</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
