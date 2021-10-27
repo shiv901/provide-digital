@@ -6,7 +6,8 @@ $light : #d7eff5;
 $green :#53ba00;
 $light-text : #7a7a7a;
 $yellow: #FFF8D6;
-
+$l-grey: #F7F7F7;
+$grey  :#C5C5C5;
 
 // Utilities
 .fw-bold {
@@ -23,6 +24,10 @@ $yellow: #FFF8D6;
 
 .fs-lg {
   font-size: large;
+}
+
+.m-large{
+  margin: 5rem 8rem;
 }
 
 ul li {
@@ -46,6 +51,9 @@ h6 {
 .mt-10 {
   margin-top: 6rem;
 }
+
+.mt--10{margin-top: -10rem;}
+.mt--13{margin-top: -13rem;}
 
 .h-100vh{height: 100vh;}
 
@@ -77,8 +85,8 @@ body {
 .lead-text {
   font-size: calc(1.375rem + 1.5vw);
   text-align: center;
-  margin-bottom: 5rem;
   font-weight: 300;
+  margin-bottom: 5rem;
   color: $light-text;
 
   span {
@@ -144,8 +152,12 @@ body {
 
   &.sticky{
     background: #3c4444;
-    top: 4.8rem;
+    top: 4.6rem;
     overflow: visible;
+
+    @media screen and (max-width: 1200px) {
+      top: 4rem;
+    }
   }
 
 }
@@ -301,6 +313,8 @@ body {
 // ********** Vision Section ********** //
 #vision {
   margin-top: -4rem;
+  position: relative;
+  z-index: 2;
   .card {
     border: none !important;
     transition: all 0.3s ease-in-out;
@@ -326,6 +340,10 @@ body {
     background: $light;
     margin-top: -14rem;
     padding-bottom: 10rem;
+  }
+
+  .lead-text{
+    margin-bottom: 5rem;
   }
 
   .slide-item{
@@ -360,15 +378,30 @@ body {
 
     &::after {
       background: none;
-      // background-color: $yellow;
     }
   }
 
-  .yellow-wrapper {
-    background-color: $yellow;
-    margin-top: -14rem;
-    padding-bottom: 10rem;
+  .green.curves{
+    margin-top: -10rem;
+    &::before{
+      background: $seagreen;
+      // margin-top: -10rem;
+      position: relative;
+      z-index: 0;
+    }
+  }
 
+  .yellow-wrapper,
+  .green-wrapper {
+    background-color: $yellow;
+    margin-top: -10rem;
+    padding-bottom: 10rem;
+  }
+
+  .green-wrapper{
+    background-color: $seagreen;
+    color: white;
+    padding-bottom: 20rem;
   }
 
   .yellow-wrapper+div {
@@ -465,36 +498,140 @@ body {
       }
     }
 
+    .card-title{
+      font-size: 1.5rem;
+    }
+
+    .card-decs{
+      color: $green;
+      font-size: 0.75rem;
+      p{
+        margin-block: 0.75rem;
+      }
+      a{
+        color: #0a58ca;
+        text-decoration: underline;
+      }
+    }
+    .nav.social-icons a {
+      background: #fff;
+      border: 1px solid #333;
+      width: 35px;
+      height: 35px;
+      display: block;
+      line-height: 35px;
+      border-radius: 20px;
+      color: #333;
+      text-align: center;
+      margin-inline: 4px;
+
+      &:hover{
+        background: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#faces-full{
+  margin-top: -13rem;
+
+  .curves{
+    &.l-grey{
+      .wrapper{
+        background: $l-grey;
+      }
+      &::before{
+        background-color: $l-grey;
+      }
+    }
+    &.green{
+      margin-top: -13rem;
+      .wrapper{
+        margin-top: -4rem;
+        background: $green;
+        color: white;
+      }
+      &::before{
+        background: $green;
+      }
+    }
+    &.grey{
+      margin-top: -13rem;
+      .wrapper{
+        margin-top: -4rem;
+        background: $grey;
+      }
+      &::before{
+        background: $grey;
+      }
+    }
+
+    &::after{
+      background: none;
+    }
+  }
+  .wrapper{
+    background-color: $l-grey;
+    margin-top: -8rem;
+    padding-bottom: 10rem;
+  }
+  .framed-img{
+    border: 15px solid white;
+    box-shadow: 0px 0px 20px 5px #0006;
   }
 }
 
 #get-in-touch {
-  padding: 5rem;
-  margin-bottom: 0;
-  background-image: linear-gradient(135deg, #A6E72A 20%, #53BA00 80%);
-
-  i {
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 1.5rem;
-    border-radius: 50%;
+  margin-top: -14rem;
+  margin-bottom: -5rem;
+  &::before{
+    background: #F2FDF2;
   }
-
-  h5 {
-    position: relative;
+  &::after{
+    display: none;
   }
-
-  h5::after {
-    content: '';
-    position: absolute;
-    background: #fff;
-    bottom: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3rem;
-    height: 2px;
+  .wrapper{
+    background: #F2FDF2;
+    padding-bottom: 15rem;
+  
+    img{
+      position: absolute;
+      top: -90px;
+      left: 0;
+      transform: translateX(70%);
+    }
   }
 }
+
+
+
+//   padding: 5rem;
+//   margin-bottom: 0;
+//   background-image: linear-gradient(135deg, #A6E72A 20%, #53BA00 80%);
+
+//   i {
+//     color: #fff;
+//     border: 2px solid #fff;
+//     padding: 1.5rem;
+//     border-radius: 50%;
+//   }
+
+//   h5 {
+//     position: relative;
+//   }
+
+//   h5::after {
+//     content: '';
+//     position: absolute;
+//     background: #fff;
+//     bottom: -1rem;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 3rem;
+//     height: 2px;
+//   }
+// }
 
 .main-footer {
 
