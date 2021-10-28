@@ -77,6 +77,10 @@ body {
   font-family: 'Comfortaa', sans-serif;
 }
 
+.slick-arrow:before{
+  color: #222;
+}
+
 ::selection {
   background-color: #333;
   color: #fff;
