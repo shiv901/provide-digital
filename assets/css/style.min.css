@@ -102,6 +102,8 @@ body { font-family: 'Comfortaa', sans-serif; }
 
 #vision .card { border: none !important; transition: all 0.3s ease-in-out; margin-block: 1.5rem; }
 
+#vision .card img { width: 150px; height: 150px; }
+
 #vision .card:hover { transform: translateY(-5%); }
 
 #vision .card:hover .card-title { color: #53ba00; }
