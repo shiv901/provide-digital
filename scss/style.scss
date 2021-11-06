@@ -8,6 +8,7 @@ $light-text : #7a7a7a;
 $yellow: #FFF8D6;
 $l-grey: #F7F7F7;
 $grey  :#C5C5C5;
+$light-blue : #d0f3f2;
 
 // Utilities
 .fw-bold {
@@ -28,6 +29,12 @@ $grey  :#C5C5C5;
 
 .m-large{
   margin: 5rem 8rem;
+  @media screen and (max-width:1200px){
+    margin: 4rem 6rem;
+  }
+  @media screen and (max-width:990px){
+    margin: 3rem 2rem;
+  }
 }
 
 ul li {
@@ -129,6 +136,24 @@ body {
       transition: all 400ms ease 200ms;
     }
   }
+  @media screen and (max-width:990px) {
+    .slick-slide{
+        // --scale : 1;
+      transform: scale(1);
+      &.slick-current.slick-active {
+        transform: scale(1.5); 
+      }
+    }
+    
+  }
+  @media screen and (max-width:786px){
+    .slick-slide{
+      transform: scale(0.7);
+      &.slick-current.slick-active {
+        transform: scale(1); 
+      }
+    }
+  }
 
 }
 
@@ -160,7 +185,7 @@ body {
     overflow: visible;
 
     @media screen and (max-width: 1200px) {
-      top: 4rem;
+      top: 3.8rem;
     }
   }
 
@@ -171,12 +196,12 @@ body {
 
   @media screen and (max-width:990px) {
     max-width: 25%;
+    img{
+      width: 65% !important;
+    }
   }
 }
 
-// @media screen and (max-width:990px) {
-//   .navbar-brand{max-width: 25%;}
-// }
 
 .nav-item {
   margin-right: 1rem;
@@ -291,7 +316,10 @@ body {
 .contact-navbar{
   &.navbar-wrapper{
     position: relative;
-    top: 6rem;
+    // top: 6rem;
+    transform: none;
+    background: $light-blue;
+    padding-top: 1rem;
   }
   .nav-link{
     color: #000 !important;
@@ -303,7 +331,7 @@ body {
 #contact{
   margin-top: -5rem;
   padding-top: 10rem;
-  background: #d0f3f2;
+  background: $light-blue;
   padding-bottom: 5rem;
   margin-bottom: -4rem;
 
@@ -359,12 +387,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-block: 4rem;
+
+    img{
+      @media screen and (max-width:1200px) {
+        width: 60%;
+      }
+    }
+    .w-75{
+      width: 60% !important;
+    }
   }
 
   .video-div{
     .text{
       width: 45%;
       margin-right: 2rem;
+      @media screen and (max-width:786px){
+        width: 100%;
+        text-align: center ;
+      }
     }
   }
 
@@ -657,8 +699,15 @@ body {
     background-color: #00254D;
   }
 
-  .footer-column {
+  .footer-logo{
+    @media screen and (max-width:990px) {
+      img{
+        width: 230px;
+      }
+    }
+  }
 
+  .footer-column {
     &:not(:last-child) {
       width: 100%;
       max-width: 180px;
@@ -679,5 +728,15 @@ body {
       }
     }
   }
-
+  
+  @media screen and (max-width:786px) {
+    .wrapper{
+      .footer-column{
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+        max-width: 100%;
+      }
+    }
+  }
 }

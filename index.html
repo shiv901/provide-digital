@@ -35,7 +35,7 @@
 <body>
 
   <!-- ------------------------------- Navbar -------------------------------- -->
-  <div class="navbar-wrapper static">
+  <div class="navbar-wrapper static navbar-dark">
     <nav class="navbar navbar-expand-lg py-2">
       <div class="container">
         <a class="navbar-brand" href="/">
@@ -46,9 +46,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul class="navbar-nav ">
+          <ul class="navbar-nav mb-3 mb-lg-auto">
             <li class="nav-item">
-              <a class="nav-link active ms-5" aria-current="page" href="#">Home</a>
+              <a class="nav-link active ms-lg-5" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -154,7 +154,7 @@
                 <h2 class="mb-3">More time for what matters</h2>
                 <p>By making it easier to access your care logs and e-MAR, we’ll help reduce your audit time so you can focus on the things that matter most.</p>
                 <!-- <button class="learn-btn">Learn More</button> -->
-                <a href="contact.html" class="learn-btn d-inline-block">Request a demo</a>
+                <a href="contact.html" class="learn-btn d-inline-block mb-5">Request a demo</a>
               </div>
 
             </div>
@@ -209,7 +209,7 @@
                 <img src="./assets/img/Heart.svg" alt="Heart" class="img-fuild">
                 <h2 class="mb-3">More knowledge about what's happening</h2>
                 <p>We know that you can’t be everywhere at once. That’s why we give you the tools to know what's happening and react, fast.</p>
-                <a href="contact.html" class="learn-btn d-inline-block">Request a demo</a>
+                <a href="contact.html" class="learn-btn d-inline-block mb-5">Request a demo</a>
                 <!-- <button class="learn-btn">Learn More</button> -->
               </div>
             </div>
@@ -269,7 +269,7 @@
       <div class="col-12 col-md-8 mx-auto px-4">
         <div class="face-slider">
           <div>
-            <div class="card border-0">
+            <div class="card border-0 mx-md-2 mx-lg-auto">
               <div class="img-wrapper"><img src="./assets/img/paul.png" alt="Paul Twyman" class="img-fluid w-100"></div>
               <div class="card-body text-center">
                 <h3 class="card-title">Paul Twyman</h3>
@@ -293,7 +293,7 @@
             </div>
           </div>
           <div>
-            <div class="card border-0">
+            <div class="card border-0 mx-md-2 mx-lg-auto">
               <div class="img-wrapper"><img src="./assets/img/philip-richards.png" alt="Philip_Richards" class="img-fluid w-100"></div>
               <div class="card-body text-center">
                 <h3 class="card-title">Philip Richards</h3>
@@ -317,7 +317,7 @@
             </div>
           </div>
           <div>
-            <div class="card border-0">
+            <div class="card border-0 mx-md-2 mx-lg-auto">
               <div class="img-wrapper"><img src="./assets/img/John-niland.png" alt="John Niland" class="img-fluid w-100"></div>
               <div class="card-body text-center">
                 <h3 class="card-title">John Niland</h3>
@@ -378,14 +378,13 @@
   <!-- --------------------- Footer ---------------------- -->
 
   <footer class="main-footer text-white curves">
-    <!-- <img src="./assets/img/footer_dark-blue-squiggle.svg" alt="curved-image" class="img-fluid footer-curved"> -->
     <div class="wrapper">
       <div class="container pb-md-3">
         <div class="row justify-content-between">
-          <div class="col-auto footer-column">
+          <div class="col-lg-2 col-md-12 footer-logo text-center mb-5">
             <img src="./assets/img/pd-white-logo.svg" alt="Provide Digital" class="img-fluid">
           </div>
-          <div class="col-auto footer-column">
+          <div class="col-lg-auto col-md-4 col-12 footer-column">
             <h6>Product</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">Assessment</a></li>
@@ -394,7 +393,7 @@
               <li><a href="#" class="footer-link">Pricing</a></li>
             </ul>
           </div>
-          <div class="col-auto footer-column">
+          <div class="col-lg-auto col-md-4 col-12 footer-column">
             <h6>Resources</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">Blog</a></li>
@@ -404,7 +403,7 @@
               <li><a href="#" class="footer-link">Security and Data Protection</a></li>
             </ul>
           </div>
-          <div class="col-auto footer-column">
+          <div class="col-lg-auto col-md-4 col-12 footer-column">
             <h6>Company</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">Join us</a></li>
@@ -412,7 +411,7 @@
               <li><a href="#" class="footer-link">Support</a></li>
             </ul>
           </div>
-          <div class="col-auto footer-column">
+          <div class="col-lg-auto col-md-4 col-12 footer-column">
             <h6>Follow us</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">Facebook</a></li>
@@ -420,7 +419,7 @@
               <li><a href="#" class="footer-link">LinkedIn</a></li>
             </ul>
           </div>
-          <div class="col-auto footer-column">
+          <div class="col-lg-auto col-md-4 col-12 footer-column">
             <h6>Legal</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">Terms & conditions</a></li>
@@ -446,79 +445,8 @@
 
   <!-- Typewriter JS -->
   <script src="./assets/js/jquery.typewriter.js"></script>
-  <script>
-    // Auto hide Navbar
-    const navbarClassUpdate = (className = "") => {
-      document.querySelector('.navbar-wrapper').className = `navbar-wrapper ${className}`
-    }
 
-    window.onscroll = function (e) {
-      if (this.oldScroll > this.scrollY) {
-        // scroll up
-        this.scrollY > 100 && navbarClassUpdate("sticky");
-      } else {
-        // scroll down
-        this.scrollY > 100 && navbarClassUpdate();
-      }
-
-      this.scrollY < 100 && navbarClassUpdate("static");
-      this.oldScroll = this.scrollY;
-      delete window.onscroll;
-    };
-    // Auto Hide Fn ends
-
-    // ********* Navbar Minimize and Fixed ******//
-
-    // ********* Typewriter JS *****************//
-    $('#typewriter').typewriter({
-      text: ["Agency", "Company"],
-      typeDelay: 100,
-      waitingTime: 1000,
-      blinkSpeed: 1000,
-      prefix: ''
-    });
-
-
-    $(document).ready(function () {
-
-      AOS.init();
-
-      $('.partner-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        cssEase: 'ease',
-        autoplay: true,
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      });
-
-      $('.face-slider').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      });
-    });
-  </script>
+  <script src="./assets/js/app.js"></script>
 
 </body>
 
