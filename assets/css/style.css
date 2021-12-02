@@ -623,3 +623,9 @@ body {
 .main-footer .footer-column .footer-link:hover {
   color: #d7eff5;
 }
+
+/*navbar css */
+
+.navbar-nav-wrapper .bg-dard-clr {
+  background-color: #342e4e!important;
+}
